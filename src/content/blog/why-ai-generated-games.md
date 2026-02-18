@@ -1,8 +1,7 @@
 ---
-title: 'Why I'm Betting on AI-Generated Games'
-description: 'Games are an underutilized creative medium. AI is about to change that.'
-pubDate: 'Feb 17 2026'
-heroImage: '/blog-placeholder-1.jpg'
+title: "Why I'm Betting on AI-Generated Games"
+description: "Games are an underutilized creative medium. AI is about to change that."
+pubDate: "Feb 17 2026"
 draft: true
 ---
 
