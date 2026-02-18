@@ -1,76 +1,98 @@
 ---
 title: "Why I'm Betting on AI-Generated Games"
-description: "Games are an underutilized creative medium. AI is about to change that — and I'm building the company to prove it."
+description: "Something real is happening. Games are about to become a conversational medium."
 pubDate: "Feb 17 2026"
 ---
 
-Here's a take that might sound obvious in a few years, but feels early right now: **AI-generated games are going to be huge.**
+Last Tuesday I typed: *"A puzzle platformer where gravity rotates every 10 seconds and you play as a maintenance robot inside a collapsing space station."*
 
-Not AI-assisted game development. Not AI-generated assets. Complete, playable games — created from a prompt, iterated on in real-time, and shared instantly.
+Thirty seconds later I was playing it.
 
-I'm building [Granularity Games](https://granularitygames.com) to make this happen. And I'm doing it in a way that might sound crazy: the company itself is autonomously run.
+The first version was broken. The robot spawned halfway inside a wall. When gravity flipped, the entire map fell apart. But the fourth version? It worked. Not perfectly. The jump arc felt floaty. The win condition was too easy. But it was playable. And more importantly — it felt like *something*.
 
-Let me explain both.
+That was the moment I stopped thinking of AI-generated games as a gimmick.
 
-## Games Are the New Video
+Something real is happening here.
 
-Remember when making a video was hard? You needed cameras, editing software, distribution channels. Then smartphones happened, then YouTube, then TikTok. Suddenly anyone could make video. The barrier dropped, and an entire creative medium exploded.
+## Games Never Had Their YouTube Moment
 
-Games never had that moment.
+Video had a barrier. Then smartphones crushed it.
 
-Sure, we got Unity, Roblox, Dreams. But those still require *development*. You need to understand game logic, asset pipelines, level design. Even the "easy" tools have a learning curve that filters out 99% of potential creators.
+Writing had a barrier. Then blogging crushed it.
 
-What if you could just... describe a game and play it?
+Games still have a barrier.
 
-## What I'm Building
+Unity, Unreal, Godot — they're powerful. But they assume you want to become a developer. Most people don't. They want to create something and play it immediately.
 
-Granularity Games is an AI engine that creates complete, playable games from a prompt. Not templates. Not assets. Complete games.
+What if you could just describe a game and be inside it 30 seconds later?
 
-Here's how it works:
+Not a template. Not a reskinned clone. A game that didn't exist before you described it.
 
-1. You describe a game idea
-2. The system generates game logic, assets, and levels
-3. It iterates — playtesting itself, fixing issues, making sure it's actually playable and winnable
-4. You play the result, share it, remix it
+That's what I'm building.
 
-The key insight is that **creation, iteration, and discovery should be one workflow**. Existing tools treat these as separate phases. That's wrong. When you can instantly play what you just described, the feedback loop becomes immediate. You iterate in real-time. You discover new ideas by playing.
+## What Granularity Actually Does
+
+[Granularity Games](https://granularitygames.com) takes a prompt and generates:
+
+- Game logic
+- Level layout
+- Assets
+- Rules
+- Win conditions
+- Basic balancing passes
+
+Then it runs simulations to make sure the game is at least technically winnable.
+
+Three months ago, it couldn't do this. Levels were often impossible. Enemies spawned behind walls. Sometimes the player just fell forever.
+
+I had to add deterministic constraints on top of the LLM reasoning. Hard rules about gravity, reachable surfaces, collision grids. The AI is creative — but physics still needs guardrails.
+
+Right now the games aren't AAA. They're closer to experimental itch.io prototypes. But they're real. And they didn't exist 60 seconds earlier.
+
+That's the shift.
+
+## The Part That Feels Slightly Unhinged
+
+I'm not just building AI-generated games.
+
+I'm building an AI-native *company*.
+
+Most of the repo was written by AI tools. I architect the system, define the constraints, review the output — but I rarely write raw code anymore.
+
+I have an AI assistant named Grit that handles operational tasks. Email triage. Scheduling. Drafts. Coordination. It has commit access. It has inbox access.
+
+That might be irresponsible. I'm still deciding.
+
+But if the product is AI-generated games, the company should reflect that same philosophy: humans set direction, AI executes.
+
+I'm the bottleneck on taste and vision. Everything else is increasingly automated.
 
 ## Why Now?
 
-LLMs have crossed a threshold. They can finally reason about game systems — not just generate code, but understand what makes a game *work*. Combined with deterministic game logic and constraint systems, you can generate games that are actually playable.
+LLMs crossed a threshold.
 
-I'm not saying the games are going to be AAA quality. They're not. But they don't need to be.
+Not just code generation — but systemic reasoning. They can model rule interactions now.
 
-TikTok videos aren't HBO shows. Instagram photos aren't professional photography. And AI-generated games don't need to compete with Elden Ring.
+Combine that with deterministic safety rails and you get something new:
 
-They need to be *good enough to be fun*, and the barrier to create them needs to be zero.
+**Playable systems from language.**
 
-## The Autonomous Company Experiment
+This doesn't compete with Elden Ring. It competes with boredom. It competes with the friction between "I have an idea" and "I made something."
 
-Here's where it gets weird.
+That gap is collapsing.
 
-I'm not just building AI-generated games. I'm building an AI-native *company*. 
+## The Real Goal
 
-The code? AI-generated, using Claude Code and similar tools. I design the architecture and direct the work, but I rarely write code directly anymore.
+In the next 6 months, I don't need investors. I don't need press.
 
-Operations? Handled by an AI assistant named Grit. Email, scheduling, coordination — Grit manages it. (Grit also helped draft this blog post, though I'm writing this particular paragraph myself.)
+I want 100 people to generate a game and think: *"Wait… I made this?"*
 
-This isn't a gimmick. It's an experiment in what a company looks like when AI handles most of the execution. I'm the bottleneck on vision, taste, and decisions. Everything else can scale.
+If that happens, we're early but we're right.
 
-If AI can generate games, why not the company that builds the game engine?
+If it doesn't, maybe I'm wrong. Maybe this is just my own obsession.
 
-## Where This Goes
+But I can't unsee the trajectory.
 
-Short term: playable prototypes, rapid ideation, game jams at the speed of thought.
-
-Medium term: a generation of creators who think in games the way my generation thinks in video.
-
-Long term: games as a universal language for ideas, education, expression. And companies that run themselves.
-
-I'm documenting this journey publicly — the wins, the failures, the weird experiments. If you're interested in AI, gaming, or building strange things, follow along.
-
-More soon.
+Games are about to become a conversational medium. And I want to build the engine that makes that possible.
 
 — Nick
-
-*P.S. Yes, I'm aware of the irony of writing about AI autonomy while still having to edit my AI's blog drafts. We're getting there.*
