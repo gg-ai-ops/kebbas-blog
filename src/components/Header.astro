@@ -37,8 +37,9 @@ import HeaderLink from './HeaderLink.astro';
 	header {
 		margin: 0;
 		padding: 0 1em;
-		background: white;
-		box-shadow: 0 2px 8px rgba(var(--black), 5%);
+		background: rgba(10, 10, 15, 0.95);
+		border-bottom: 1px solid rgba(139, 92, 246, 0.2);
+		backdrop-filter: blur(10px);
 	}
 	h2 {
 		margin: 0;
@@ -48,6 +49,8 @@ import HeaderLink from './HeaderLink.astro';
 	h2 a,
 	h2 a.active {
 		text-decoration: none;
+		color: #fff;
+		font-weight: 700;
 	}
 	nav {
 		display: flex;
@@ -56,17 +59,29 @@ import HeaderLink from './HeaderLink.astro';
 	}
 	nav a {
 		padding: 1em 0.5em;
-		color: var(--black);
+		color: #a78bfa;
 		border-bottom: 4px solid transparent;
 		text-decoration: none;
+		transition: all 0.2s ease;
+	}
+	nav a:hover {
+		color: #ec4899;
 	}
 	nav a.active {
 		text-decoration: none;
-		border-bottom-color: var(--accent);
+		border-bottom-color: #8b5cf6;
+		color: #fff;
 	}
 	.social-links,
 	.social-links a {
 		display: flex;
+	}
+	.social-links a {
+		color: #94a3b8;
+		padding: 1em 0.5em;
+	}
+	.social-links a:hover {
+		color: #a78bfa;
 	}
 	@media (max-width: 720px) {
 		.social-links {
