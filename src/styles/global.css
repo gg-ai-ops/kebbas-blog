@@ -1,6 +1,6 @@
 /*
   Dark neon theme for kebbas.com
-  Inspired by Granularity Games aesthetic
+  Typography inspired by Medium
  */
 
 :root {
@@ -38,7 +38,7 @@
 }
 
 body {
-	font-family: "Atkinson", sans-serif;
+	font-family: "Atkinson", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 	margin: 0;
 	padding: 0;
 	text-align: left;
@@ -46,15 +46,16 @@ body {
 	word-wrap: break-word;
 	overflow-wrap: break-word;
 	color: rgb(var(--gray-dark));
-	font-size: 20px;
-	line-height: 1.7;
+	font-size: 18px;
+	line-height: 1.58;
+	letter-spacing: -0.003em;
 }
 
 main {
-	width: 720px;
+	width: 680px;
 	max-width: calc(100% - 2em);
 	margin: auto;
-	padding: 3em 1em;
+	padding: 2em 1em;
 }
 
 h1,
@@ -63,13 +64,15 @@ h3,
 h4,
 h5,
 h6 {
-	margin: 0 0 0.5rem 0;
+	margin: 1.5em 0 0.5em 0;
 	color: #fff;
-	line-height: 1.2;
+	line-height: 1.25;
+	letter-spacing: -0.015em;
 }
 
 h1 {
-	font-size: 3.052em;
+	font-size: 2.5em;
+	margin-top: 0;
 	background: linear-gradient(135deg, var(--neon-purple), var(--neon-blue));
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -77,25 +80,30 @@ h1 {
 }
 
 h2 {
-	font-size: 2.441em;
+	font-size: 1.75em;
+	margin-top: 2em;
 }
 
 h3 {
-	font-size: 1.953em;
+	font-size: 1.4em;
 }
 
 h4 {
-	font-size: 1.563em;
+	font-size: 1.2em;
 }
 
 h5 {
-	font-size: 1.25em;
+	font-size: 1.1em;
 }
 
 strong,
 b {
 	font-weight: 700;
 	color: #fff;
+}
+
+em, i {
+	color: rgb(var(--gray-dark));
 }
 
 a {
@@ -110,11 +118,11 @@ a:hover {
 }
 
 p {
-	margin-bottom: 1em;
+	margin: 0 0 1.25em 0;
 }
 
 .prose p {
-	margin-bottom: 2em;
+	margin-bottom: 1.25em;
 }
 
 textarea {
@@ -148,14 +156,17 @@ code {
 	border-radius: 4px;
 	color: var(--accent-light);
 	font-size: 0.9em;
+	font-family: "SF Mono", Monaco, "Cascadia Code", monospace;
 }
 
 pre {
-	padding: 1.5em;
+	padding: 1.25em;
 	border-radius: 8px;
 	background-color: var(--bg-card);
 	border: 1px solid rgb(var(--gray-light));
 	overflow-x: auto;
+	font-size: 0.9em;
+	line-height: 1.5;
 }
 
 pre > code {
@@ -164,10 +175,10 @@ pre > code {
 }
 
 blockquote {
-	border-left: 4px solid var(--accent);
-	padding: 0 0 0 20px;
-	margin: 0;
-	font-size: 1.333em;
+	border-left: 3px solid var(--accent);
+	padding: 0 0 0 1.25em;
+	margin: 1.5em 0;
+	font-style: italic;
 	color: rgb(var(--gray));
 }
 
@@ -179,18 +190,31 @@ hr {
 
 ul, ol {
 	color: rgb(var(--gray-dark));
+	margin: 0 0 1.25em 0;
+	padding-left: 1.5em;
 }
 
 li {
 	margin-bottom: 0.5em;
+	line-height: 1.58;
+}
+
+li:last-child {
+	margin-bottom: 0;
 }
 
 @media (max-width: 720px) {
 	body {
-		font-size: 18px;
+		font-size: 17px;
 	}
 	main {
 		padding: 1em;
+	}
+	h1 {
+		font-size: 2em;
+	}
+	h2 {
+		font-size: 1.5em;
 	}
 }
 
