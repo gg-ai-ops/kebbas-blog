@@ -1,19 +1,16 @@
 ---
 title: "Why I'm Betting on AI-Generated Games"
-description: "Games are an underutilized creative medium. AI is about to change that."
+description: "Games are an underutilized creative medium. AI is about to change that — and I'm building the company to prove it."
 pubDate: "Feb 17 2026"
-draft: true
----
-
-*This is a draft — Nick to review and revise in his own voice.*
-
 ---
 
 Here's a take that might sound obvious in a few years, but feels early right now: **AI-generated games are going to be huge.**
 
 Not AI-assisted game development. Not AI-generated assets. Complete, playable games — created from a prompt, iterated on in real-time, and shared instantly.
 
-I've been building toward this for the past few months, and I want to explain why I think this matters.
+I'm building [Granularity Games](https://granularitygames.com) to make this happen. And I'm doing it in a way that might sound crazy: the company itself is autonomously run.
+
+Let me explain both.
 
 ## Games Are the New Video
 
@@ -25,9 +22,9 @@ Sure, we got Unity, Roblox, Dreams. But those still require *development*. You n
 
 What if you could just... describe a game and play it?
 
-## What I'm Actually Building
+## What I'm Building
 
-[Granularity Games](https://granularitygames.com) is an AI engine that creates complete, playable games from a prompt. Not templates. Not assets. Complete games.
+Granularity Games is an AI engine that creates complete, playable games from a prompt. Not templates. Not assets. Complete games.
 
 Here's how it works:
 
@@ -48,13 +45,19 @@ TikTok videos aren't HBO shows. Instagram photos aren't professional photography
 
 They need to be *good enough to be fun*, and the barrier to create them needs to be zero.
 
-## What the Competitors Miss
+## The Autonomous Company Experiment
 
-Unity, Roblox, AI asset generators — they're all missing the point.
+Here's where it gets weird.
 
-They focus on professional developers or isolated content creation. None of them generate complete games. None of them treat creation as a *creative medium* rather than a *development process*.
+I'm not just building AI-generated games. I'm building an AI-native *company*. 
 
-The opportunity isn't better dev tools. It's making games a form of expression that anyone can participate in.
+The code? AI-generated, using Claude Code and similar tools. I design the architecture and direct the work, but I rarely write code directly anymore.
+
+Operations? Handled by an AI assistant named Grit. Email, scheduling, coordination — Grit manages it. (Grit also helped draft this blog post, though I'm writing this particular paragraph myself.)
+
+This isn't a gimmick. It's an experiment in what a company looks like when AI handles most of the execution. I'm the bottleneck on vision, taste, and decisions. Everything else can scale.
+
+If AI can generate games, why not the company that builds the game engine?
 
 ## Where This Goes
 
@@ -62,10 +65,12 @@ Short term: playable prototypes, rapid ideation, game jams at the speed of thoug
 
 Medium term: a generation of creators who think in games the way my generation thinks in video.
 
-Long term: games as a universal language for ideas, education, expression.
+Long term: games as a universal language for ideas, education, expression. And companies that run themselves.
 
-I'm building the infrastructure for that future. That's what Granularity Games is.
+I'm documenting this journey publicly — the wins, the failures, the weird experiments. If you're interested in AI, gaming, or building strange things, follow along.
 
----
+More soon.
 
-*More updates to come. I'm building in public, so follow along for the messy reality behind the vision.*
+— Nick
+
+*P.S. Yes, I'm aware of the irony of writing about AI autonomy while still having to edit my AI's blog drafts. We're getting there.*
